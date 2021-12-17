@@ -1,18 +1,16 @@
 import Link from "next/link";
-export default function Home() {
+
+export default function index() {
   return (
-    <div>
-      <h1>This is home page</h1>
-      <h1>
-        <Link href={"/blog"}>
-          <a>Blog</a>
-        </Link>
-      </h1>
-      <h1>
-        <Link href={"/products"}>
-          <a>Products</a>
-        </Link>
-      </h1>
-    </div>
+    <>
+      <h1>Home Page</h1>
+      <Link href="/pre-rendering">
+        <a>Pre-rendering Page</a>
+      </Link>
+      <br></br>
+      <Link href="/routing">
+        <a>Routing Examples</a>
+      </Link>
+    </>
   );
 }
