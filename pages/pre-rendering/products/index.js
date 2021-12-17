@@ -19,6 +19,10 @@ export default function ProductList({ products }) {
           </>
         );
       })}
+      <Link href={`/pre-rendering/products/events`}>
+        <a>Events (Client side data fetching demo)</a>
+      </Link>
+      <br></br>
     </>
   );
 }
